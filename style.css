@@ -1,23 +1,67 @@
+:root {
+    --bg-color: #f0f0f0;
+    --container-bg: #ffffff;
+    --text-color: #333333;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --button-bg: #4CAF50;
+    --button-hover: #45a049;
+    --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --container-bg: #2d2d2d;
+    --text-color: #f0f0f0;
+    --card-shadow: rgba(0, 0, 0, 0.5);
+    --button-bg: #388e3c;
+    --button-hover: #2e7d32;
+}
+
 body {
     font-family: sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
-    background-color: white;
+    background-color: var(--container-bg);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--card-shadow);
     text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 h1 {
-    color: #333;
+    color: var(--text-color);
 }
 
 .numbers-container {
@@ -39,9 +83,9 @@ h1 {
     color: white;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
+button:not(.theme-toggle) {
+    background-color: var(--button-bg);
+    color: var(--button-text);
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
@@ -50,6 +94,6 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
+button:not(.theme-toggle):hover {
+    background-color: var(--button-hover);
 }
