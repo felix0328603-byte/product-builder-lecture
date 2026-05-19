@@ -146,14 +146,8 @@ textarea {
 }
 
 /* Animal Face Test Styles */
-#webcam-container {
-    margin: 1.5rem auto;
-    border: 4px solid var(--button-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    background-color: #000;
+.upload-section {
+    margin: 1.5rem 0;
 }
 
 #label-container {
