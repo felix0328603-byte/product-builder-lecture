@@ -1,34 +1,40 @@
-# Lotto Number Generator Project Blueprint
+# Lotto & AI Animal Face Test Project Blueprint
 
 ## Overview
-A web-based application that generates random lottery numbers (1-45) with a clean, responsive UI and theme support, including a partnership inquiry system.
+A multi-functional web application featuring a lottery number generator and an AI-powered animal face classifier (Dog vs. Cat) using Google Teachable Machine.
 
 ## Features
-- **Random Number Generation**: Generates 6 unique numbers between 1 and 45.
-- **Sorted Display**: Numbers are displayed in ascending order.
-- **Color Coding**: Numbers are color-coded based on their value ranges.
-- **Dark/Light Mode**: Interactive theme toggle that persists user preference using localStorage.
-- **Partnership Inquiry Form**: A contact form integrated with Formspree for handling collaborations.
-- **Responsive Design**: Mobile-friendly layout using flexbox and auto-stacking sections.
+- **Lotto Number Generator**: Generates 6 unique numbers (1-45) with range-based color coding.
+- **AI Animal Face Test**: Real-time webcam analysis to determine if a face resembles a Dog or a Cat.
+- **Dark/Light Mode**: Full theme support with local persistence.
+- **Partnership Inquiry**: Formspree-integrated contact form.
+- **Community Comments**: Disqus comment system for user interaction.
+- **Responsive Design**: Mobile-friendly layout for all tools.
 
 ## Technical Details
-- **Frontend**: HTML5, CSS3 (Modern Baseline features), Vanilla JavaScript (ES6+).
+- **AI Integration**:
+  - Google Teachable Machine Image Model.
+  - TensorFlow.js for in-browser inference.
+  - Webcam integration via `@teachablemachine/image` library.
+- **Frontend**: HTML5, CSS3 (Modern Baseline), Vanilla JS.
 - **Styling**: 
-  - CSS Variables for theme management.
-  - Flexbox for layout and responsiveness.
-  - Custom styled form elements with theme support.
-- **State Management**: localStorage used for theme persistence.
-- **Integration**: Formspree API for form submission handling.
+  - CSS Variables for themes.
+  - Custom progress bars for AI results.
+  - Flexbox-based vertical layout.
+- **State Management**: localStorage for theme settings.
+- **Integrations**: 
+  - Formspree (Contact Form)
+  - Disqus (Comments)
 
 ## Current Progress
-- [x] Basic HTML structure
-- [x] Initial styling for lotto balls
-- [x] Random number generation logic
-- [x] Sorting and color-coding logic
-- [x] Dark/Light mode implementation
-- [x] Theme persistence
-- [x] Partnership inquiry form integration
+- [x] Lotto Generator Implementation
+- [x] Dark/Light Mode with Persistence
+- [x] Partnership Inquiry Form (Formspree)
+- [x] Disqus Comment System
+- [x] AI Animal Face Test Integration
+- [x] UI Styling for AI Results
 
 ## Next Steps
-- [ ] Add animations for number generation
-- [ ] Implement multi-language support
+- [ ] Add capture/share feature for AI results
+- [ ] Implement more animal categories in the AI model
+- [ ] Add animations for result transitions
