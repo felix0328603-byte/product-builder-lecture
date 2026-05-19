@@ -1,87 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto & AI Animal Face Test | Professional Tools</title>
-    <meta name="description" content="Generate lucky lottery numbers and discover your animal face type with our AI-powered analysis tool. Free, professional, and easy to use.">
+    <title>명문가 AI 관상 & 사주 | 당신의 운명을 읽다</title>
+    <meta name="description" content="AI 기반 관상 분석과 정통 사주 명리학 정보를 제공합니다. 당신의 얼굴에 담긴 운명과 사주의 지혜를 통해 미래를 설계해보세요.">
     
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3192105713567012" crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-3192105713567012">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="nav-container">
-            <a href="#" class="logo">LottoAI</a>
-            <div class="nav-actions">
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌞</button>
-            </div>
+            <a href="#" class="logo">MYSTIC AI</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
 
     <main>
-        <!-- SEO Introductory Content -->
-        <section class="container" id="welcome">
-            <h1>Welcome to LottoAI Tools</h1>
-            <p class="section-intro">Your destination for fun AI experiments and utility tools. Our mission is to provide high-quality, interactive web experiences for free.</p>
+        <section class="hero">
+            <h1>당신의 운명을 읽는 AI 지혜</h1>
+            <p>전통 관상학의 통찰과 현대 AI 기술이 만났습니다. 얼굴에 숨겨진 복과 기운, 그리고 사주 명리학의 깊은 지혜를 만나보세요.</p>
         </section>
 
-        <!-- Lotto Section -->
-        <section class="container" id="lotto">
-            <h2>Lotto Number Generator</h2>
-            <p class="section-intro">Need some inspiration for your next lottery ticket? Our generator uses advanced randomization to pick 6 unique numbers between 1 and 45. Each range is color-coded for better visual tracking.</p>
-            <div id="numbers" class="numbers-container"></div>
-            <button id="generate">Generate Lucky Numbers</button>
-        </section>
-
-        <!-- AI Animal Face Test Section -->
-        <section class="container" id="animal-test">
-            <h2>AI Animal Face Test</h2>
-            <p class="section-intro">Ever wondered if you have a 'Dog face' or a 'Cat face'? Our AI model, powered by Google's Teachable Machine, analyzes your features to find your closest animal match. Simply upload a clear photo of your face to begin.</p>
+        <!-- Physiognomy AI Section -->
+        <section class="card" id="physiognomy">
+            <h2 class="section-title">AI 관상 분석 (Physiognomy)</h2>
+            <div class="article-content">
+                <p>관상은 단순히 외모를 보는 것이 아니라, 삶의 궤적이 얼굴에 남긴 흔적을 읽는 학문입니다. AI 기술을 통해 눈, 코, 입의 조화와 기운을 분석하여 당신의 타고난 복과 성향을 확인해보세요.</p>
+                <h3>[관상 보는 법 Tip]</h3>
+                <ul>
+                    <li><strong>눈 (해와 달):</strong> 정신의 맑음을 나타내며 재물운과 명예운의 척도가 됩니다.</li>
+                    <li><strong>코 (산):</strong> 재물을 모으는 창고로, 두툼하고 곧게 뻗은 코는 풍요를 상징합니다.</li>
+                    <li><strong>입 (바다):</strong> 말년운과 자식운을 나타내며, 입꼬리가 올라간 상은 복을 담는 그릇이라 합니다.</li>
+                </ul>
+            </div>
             
-            <div class="upload-section">
+            <div class="upload-box" id="upload-box">
+                <p>📷 사진을 업로드하거나 드래그하여 분석을 시작하세요</p>
                 <input type="file" id="image-upload" accept="image/*" style="display: none;">
-                <button type="button" id="upload-trigger">Choose Face Photo</button>
             </div>
 
-            <div id="image-preview-container" style="margin: 1.5rem auto; display: none;">
-                <img id="face-image" src="" alt="Face Preview" style="max-width: 100%; border-radius: 12px; border: 4px solid var(--button-bg);">
+            <div id="image-preview-container" style="margin: 2rem auto; display: none; text-align: center;">
+                <img id="face-image" src="" alt="Face Preview" style="max-width: 100%; max-height: 400px; border-radius: 15px; border: 5px solid var(--accent-color);">
             </div>
 
             <div id="label-container"></div>
         </section>
 
-        <!-- Partnership Section -->
-        <section class="container" id="contact">
-            <h2>Partnership Inquiry</h2>
-            <p class="section-intro">Interested in collaborating or advertising with us? Fill out the form below, and our team will get back to you as soon as possible.</p>
-            <form action="https://formspree.io/f/mpqnqzqy" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
+        <!-- Saju Info Section -->
+        <section class="card" id="saju">
+            <h2 class="section-title">정통 사주 명리학 (Saju)</h2>
+            <div class="article-content">
+                <p>사주팔자(四柱八字)는 사람이 태어난 연, 월, 일, 시의 네 기둥과 여덟 글자를 의미합니다. 이는 우주의 기운이 인간의 삶에 어떻게 투영되는지를 보여주는 거대한 지도와 같습니다.</p>
+                <h3>사주의 구성 요소</h3>
+                <p>사주는 음양오행(나무, 불, 흙, 쇠, 물)의 균형을 중요시합니다. 자신의 사주에 부족한 기운이 무엇인지 알고 이를 보완하는 것이 개운(開運)의 시작입니다.</p>
+            </div>
+            
+            <form class="contact-form">
+                <div class="saju-grid">
+                    <div class="form-group">
+                        <label>생년월일</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>태어난 시간</label>
+                        <input type="time">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="_replyto" required placeholder="john@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Inquiry</label>
-                    <textarea id="message" name="message" required placeholder="Tell us about your proposal..."></textarea>
-                </div>
-                <button type="submit">Submit Inquiry</button>
+                <button type="button" class="btn" onclick="alert('사주 상세 분석 기능 준비 중입니다. 아래의 학술 가이드를 참고해주세요.')">사주 기초 분석</button>
             </form>
         </section>
 
-        <!-- Comments Section -->
-        <section class="container" id="community">
-            <h2>Community Discussion</h2>
-            <p class="section-intro">Join the conversation! Share your results or leave a suggestion for new features.</p>
+        <!-- High Quality Content Section for AdSense -->
+        <section class="card" id="guides">
+            <h2 class="section-title">운명학 가이드</h2>
+            <div class="article-content">
+                <h3>관상이 변하는 이유</h3>
+                <p>심상(心相)이 관상보다 중요하다는 말이 있습니다. 마음가짐을 바르게 하고 웃음을 잃지 않으면 얼굴의 근육과 기운이 변하여 운이 트이게 됩니다. AI 분석 결과에 일희일비하기보다 긍정적인 변화의 계기로 삼으시길 바랍니다.</p>
+                
+                <h3>오행으로 보는 나의 기운</h3>
+                <p>목(木)은 성장, 화(火)는 열정, 토(土)는 포용, 금(金)은 결단, 수(水)는 지혜를 상징합니다. 자신의 만세력을 확인하고 나에게 필요한 오행의 색상이나 숫자를 생활에 활용해보세요.</p>
+            </div>
+        </section>
+
+        <!-- Comments -->
+        <section class="card">
+            <h2 class="section-title">운세 이야기 나누기</h2>
             <div id="disqus_thread"></div>
             <script>
                 (function() {
@@ -91,29 +100,41 @@
                     (d.head || d.body).appendChild(s);
                 })();
             </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#contact">Contact</a>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>MYSTIC AI</h4>
+                <p>전통과 현대의 조화로운 분석</p>
             </div>
-            <p>&copy; 2026 LottoAI Tools. All rights reserved.</p>
-            <p style="font-size: 0.8rem; opacity: 0.7;">Powered by AI and modern web standards.</p>
+            <div class="footer-col">
+                <h4>서비스</h4>
+                <a href="#physiognomy">AI 관상 분석</a>
+                <a href="#saju">사주 명리학</a>
+                <a href="#guides">운세 가이드</a>
+            </div>
+            <div class="footer-col">
+                <h4>법적 고지</h4>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이용약관</a>
+                <a href="#">책임 한계 고지</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Mystic AI Platform. All rights reserved.
         </div>
     </footer>
 
-    <!-- External Libraries for AI -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    
-    <!-- App Scripts -->
     <script src="main.js"></script>
     <script src="animal-test.js"></script>
+    <script>
+        document.getElementById('upload-box').addEventListener('click', () => {
+            document.getElementById('image-upload').click();
+        });
+    </script>
 </body>
 </html>

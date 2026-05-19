@@ -1,36 +1,35 @@
-# LottoAI: High-Quality Service Platform Blueprint
+# Mystic AI: Physiognomy & Saju Intelligence Platform
 
 ## Overview
-LottoAI is a professional web-based utility platform designed to provide interactive AI experiences and utility tools. The project follows Google AdSense Quality Guidelines to ensure a valuable, user-centric environment.
+Mystic AI is a professional information service that combines traditional Korean destiny studies (Physiognomy & Saju) with modern AI technology. The platform is designed specifically to meet Google AdSense high-quality content standards.
 
-## AdSense Quality Optimizations
-- **Valuable Content**: Each section includes descriptive, original text explaining the tool's purpose and usage.
-- **Clear Navigation**: Sticky header with logo and structured footer for easy access to information.
-- **Professional Design**: Modern typography (Inter), responsive layout, and polished UI elements.
-- **Legal Compliance**: Footer links for Privacy Policy, Terms of Service, and About Us sections.
-- **Technical Integrity**: Optimized for speed, mobile responsiveness, and clean SEO metadata.
+## AdSense Strategic Alignment
+- **Rich Original Content**: Detailed educational articles about Physiognomy (facial features like eyes, nose, mouth) and the basics of Saju (Yin-Yang, Five Elements).
+- **User Engagement**: Interactive AI Face analysis and Saju input forms.
+- **Navigation & Trust**: Structured Header/Footer with links to Privacy Policy, Terms, and About.
+- **Professional Aesthetics**: Traditional Korean color palette (Deep Red/Gold) mixed with modern clean UI for a "Premium" feel.
+- **Language**: Optimized for Korean users (K-Destiny context).
 
 ## Core Features
-- **Lotto Number Generator**: Random 1-45 number generation with range-specific color coding.
-- **AI Animal Face Test**: Image-based classifier (Dog vs. Cat) using TensorFlow.js and Teachable Machine.
-- **Dual Theme Support**: Persistently stored Dark/Light mode transitions.
-- **Partnership Portal**: Streamlined Formspree contact system for B2B inquiries.
-- **Community Hub**: Disqus integration for user engagement and feedback.
+- **AI Physiognomy Reading**: Image classification framed as personality and fortune analysis.
+- **Saju Educational Hub**: Information regarding the Four Pillars of Destiny.
+- **Destiny Guides**: Articles on "How facial features change with mindset" to provide long-form readable content.
+- **Community Interaction**: Disqus comments for user stories and engagement.
 
-## Technical Stack
-- **AI**: Teachable Machine / TensorFlow.js
-- **Frontend**: Modern HTML5, CSS3 (Baseline features), Vanilla JavaScript
-- **Monetization**: Google AdSense (Verification meta-tag & ads.txt included)
-- **Deployment**: Firebase Hosting ready
+## Technical Details
+- **AI Inference**: TensorFlow.js / Teachable Machine.
+- **Responsive Layout**: Mobile-first design for broad accessibility.
+- **Dark Mode**: Persisted theme for nighttime reading comfort.
+- **SEO**: Meta tags and structured headings for better search visibility.
 
-## Current Status
-- [x] AdSense Policy compliant layout & content
-- [x] SEO-optimized headings and meta-description
-- [x] Professional Typography and Spacing
-- [x] Functional AI and Lotto tools
-- [x] ads.txt and Account Verification
+## Current Progress
+- [x] Pivot from Lotto to Physiognomy/Saju theme
+- [x] Implementation of rich educational articles
+- [x] AI analysis logic reframing
+- [x] Professional "Mystic" CSS theme
+- [x] AdSense verification and ads.txt maintenance
 
 ## Next Steps
-- [ ] Implement actual content for Privacy/Terms modals
-- [ ] Add share buttons for AI results
-- [ ] Improve AI model accuracy with more training data
+- [ ] Add more in-depth Saju calculation logic
+- [ ] Implement daily luck horoscope feature
+- [ ] Expand the article library with "Feature of the Month"
