@@ -1,40 +1,36 @@
-# Lotto & AI Animal Face Test Project Blueprint
+# LottoAI: High-Quality Service Platform Blueprint
 
 ## Overview
-A multi-functional web application featuring a lottery number generator and an AI-powered animal face classifier (Dog vs. Cat) using Google Teachable Machine.
+LottoAI is a professional web-based utility platform designed to provide interactive AI experiences and utility tools. The project follows Google AdSense Quality Guidelines to ensure a valuable, user-centric environment.
 
-## Features
-- **Lotto Number Generator**: Generates 6 unique numbers (1-45) with range-based color coding.
-- **AI Animal Face Test**: Real-time webcam analysis to determine if a face resembles a Dog or a Cat.
-- **Dark/Light Mode**: Full theme support with local persistence.
-- **Partnership Inquiry**: Formspree-integrated contact form.
-- **Community Comments**: Disqus comment system for user interaction.
-- **Responsive Design**: Mobile-friendly layout for all tools.
+## AdSense Quality Optimizations
+- **Valuable Content**: Each section includes descriptive, original text explaining the tool's purpose and usage.
+- **Clear Navigation**: Sticky header with logo and structured footer for easy access to information.
+- **Professional Design**: Modern typography (Inter), responsive layout, and polished UI elements.
+- **Legal Compliance**: Footer links for Privacy Policy, Terms of Service, and About Us sections.
+- **Technical Integrity**: Optimized for speed, mobile responsiveness, and clean SEO metadata.
 
-## Technical Details
-- **AI Integration**:
-  - Google Teachable Machine Image Model.
-  - TensorFlow.js for in-browser inference.
-  - Webcam integration via `@teachablemachine/image` library.
-- **Frontend**: HTML5, CSS3 (Modern Baseline), Vanilla JS.
-- **Styling**: 
-  - CSS Variables for themes.
-  - Custom progress bars for AI results.
-  - Flexbox-based vertical layout.
-- **State Management**: localStorage for theme settings.
-- **Integrations**: 
-  - Formspree (Contact Form)
-  - Disqus (Comments)
+## Core Features
+- **Lotto Number Generator**: Random 1-45 number generation with range-specific color coding.
+- **AI Animal Face Test**: Image-based classifier (Dog vs. Cat) using TensorFlow.js and Teachable Machine.
+- **Dual Theme Support**: Persistently stored Dark/Light mode transitions.
+- **Partnership Portal**: Streamlined Formspree contact system for B2B inquiries.
+- **Community Hub**: Disqus integration for user engagement and feedback.
 
-## Current Progress
-- [x] Lotto Generator Implementation
-- [x] Dark/Light Mode with Persistence
-- [x] Partnership Inquiry Form (Formspree)
-- [x] Disqus Comment System
-- [x] AI Animal Face Test Integration
-- [x] UI Styling for AI Results
+## Technical Stack
+- **AI**: Teachable Machine / TensorFlow.js
+- **Frontend**: Modern HTML5, CSS3 (Baseline features), Vanilla JavaScript
+- **Monetization**: Google AdSense (Verification meta-tag & ads.txt included)
+- **Deployment**: Firebase Hosting ready
+
+## Current Status
+- [x] AdSense Policy compliant layout & content
+- [x] SEO-optimized headings and meta-description
+- [x] Professional Typography and Spacing
+- [x] Functional AI and Lotto tools
+- [x] ads.txt and Account Verification
 
 ## Next Steps
-- [ ] Add capture/share feature for AI results
-- [ ] Implement more animal categories in the AI model
-- [ ] Add animations for result transitions
+- [ ] Implement actual content for Privacy/Terms modals
+- [ ] Add share buttons for AI results
+- [ ] Improve AI model accuracy with more training data

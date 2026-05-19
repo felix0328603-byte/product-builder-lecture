@@ -3,71 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto & Animal Face Test</title>
+    <title>Lotto & AI Animal Face Test | Professional Tools</title>
+    <meta name="description" content="Generate lucky lottery numbers and discover your animal face type with our AI-powered analysis tool. Free, professional, and easy to use.">
     
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3192105713567012" crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-3192105713567012">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌞</button>
-        <h1>Lotto Number Generator</h1>
-        <div id="numbers" class="numbers-container"></div>
-        <button id="generate">Generate Numbers</button>
-    </div>
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo">LottoAI</a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌞</button>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Animal Face Test Section -->
-    <div class="container">
-        <h2>AI Animal Face Test</h2>
-        <p>Upload a photo to see if you're a Dog or a Cat face!</p>
-        
-        <div class="upload-section">
-            <input type="file" id="image-upload" accept="image/*" style="display: none;">
-            <button type="button" id="upload-trigger">Choose Image</button>
+    <main>
+        <!-- SEO Introductory Content -->
+        <section class="container" id="welcome">
+            <h1>Welcome to LottoAI Tools</h1>
+            <p class="section-intro">Your destination for fun AI experiments and utility tools. Our mission is to provide high-quality, interactive web experiences for free.</p>
+        </section>
+
+        <!-- Lotto Section -->
+        <section class="container" id="lotto">
+            <h2>Lotto Number Generator</h2>
+            <p class="section-intro">Need some inspiration for your next lottery ticket? Our generator uses advanced randomization to pick 6 unique numbers between 1 and 45. Each range is color-coded for better visual tracking.</p>
+            <div id="numbers" class="numbers-container"></div>
+            <button id="generate">Generate Lucky Numbers</button>
+        </section>
+
+        <!-- AI Animal Face Test Section -->
+        <section class="container" id="animal-test">
+            <h2>AI Animal Face Test</h2>
+            <p class="section-intro">Ever wondered if you have a 'Dog face' or a 'Cat face'? Our AI model, powered by Google's Teachable Machine, analyzes your features to find your closest animal match. Simply upload a clear photo of your face to begin.</p>
+            
+            <div class="upload-section">
+                <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                <button type="button" id="upload-trigger">Choose Face Photo</button>
+            </div>
+
+            <div id="image-preview-container" style="margin: 1.5rem auto; display: none;">
+                <img id="face-image" src="" alt="Face Preview" style="max-width: 100%; border-radius: 12px; border: 4px solid var(--button-bg);">
+            </div>
+
+            <div id="label-container"></div>
+        </section>
+
+        <!-- Partnership Section -->
+        <section class="container" id="contact">
+            <h2>Partnership Inquiry</h2>
+            <p class="section-intro">Interested in collaborating or advertising with us? Fill out the form below, and our team will get back to you as soon as possible.</p>
+            <form action="https://formspree.io/f/mpqnqzqy" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Inquiry</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your proposal..."></textarea>
+                </div>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="container" id="community">
+            <h2>Community Discussion</h2>
+            <p class="section-intro">Join the conversation! Share your results or leave a suggestion for new features.</p>
+            <div id="disqus_thread"></div>
+            <script>
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://productbuilder.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2026 LottoAI Tools. All rights reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Powered by AI and modern web standards.</p>
         </div>
-
-        <div id="image-preview-container" style="margin: 1.5rem auto; display: none;">
-            <img id="face-image" src="" alt="Preview" style="max-width: 100%; border-radius: 10px; border: 4px solid var(--button-bg);">
-        </div>
-
-        <div id="label-container"></div>
-    </div>
-
-    <div class="container">
-        <h2>Partnership Inquiry</h2>
-        <form action="https://formspree.io/f/mpqnqzqy" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" required placeholder="your@email.com">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required placeholder="How can we partner together?"></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-    <div class="container">
-        <h2>Comments</h2>
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://productbuilder.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+    </footer>
 
     <!-- External Libraries for AI -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
