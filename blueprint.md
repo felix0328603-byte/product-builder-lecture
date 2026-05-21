@@ -19,7 +19,7 @@ Mystic AI is a professional information service that combines traditional Korean
 ## Technical Details
 - **AI Inference**: TensorFlow.js / Teachable Machine.
 - **Responsive Layout**: Mobile-first design for broad accessibility.
-- **Analytics**: Integrated Google Analytics (gtag.js) for user behavior tracking.
+- **Analytics**: Integrated Google Analytics (gtag.js) and Microsoft Clarity for user behavior tracking.
 - **Dark Mode**: Persisted theme for nighttime reading comfort.
 - **SEO**: Meta tags and structured headings for better search visibility.
 
@@ -29,7 +29,7 @@ Mystic AI is a professional information service that combines traditional Korean
 - [x] AI analysis logic reframing
 - [x] Professional "Mystic" CSS theme
 - [x] AdSense verification and ads.txt maintenance
-- [x] Integration of Google Analytics for traffic analysis
+- [x] Integration of Google Analytics and Microsoft Clarity for traffic analysis
 
 ## Next Steps
 - [ ] Add more in-depth Saju calculation logic
